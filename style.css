@@ -1,0 +1,63 @@
+* {
+	font-family: fantasy;
+}
+
+
+html {
+  line-height: 1.15; 
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+}
+
+body {
+  margin: 0;
+}
+
+section {
+	width: 680px;
+	text-align: center;
+	margin-left: 35%;
+	margin-top: 10%;
+}
+
+form {
+	float: left;
+}
+
+input {
+	outline: none;
+	float: right;
+	height: 20px;
+	width: 200px;
+	color: #F01F65;
+	border-radius: 25px;
+}
+
+h1 {
+	margin-right: 300px;
+	color: #F01F65;
+	height: 40px;
+}
+
+div {
+	width: 350px;
+	height: 40px;
+	font-size: 20px;
+	color: #F01F65;
+}
+
+#formBtn {
+	background-color: #F01F65;
+	border-radius: 40px;
+	height: 25px;
+	color: white;
+
+}
+
+input:hover {
+	color: #F01F65;
+}
+
+.btn {
+	width: 340px;
+}
