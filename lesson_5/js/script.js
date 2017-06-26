@@ -9,10 +9,14 @@
 var sum = 0, x;
 
 while(true) {
-x = parseInt(prompt('Please enter number', 0), 10);
-  if(x == 0 /*|| typeof (x) !== 'number')*/ )break; //Как иначе сделать проверку на число?
+  x = parseInt(prompt('Please enter number', 0), 10);
+  if(typeof x !== 'number' || isNaN(x)) {
+    break; //Как иначе сделать проверку на число?
+  }
   sum += x;
   //alert (typeof(x)) // Ошибка! При введенных строковых данных выдает Number!
+  // Да, ты же при помощи parseInt преобразуешь тип в число. При введении сроки тебе вернется Nan а Nan - число.
+  // Тоесть тебе нужно проверить входные данные на Nan
 }
 
 alert('Sum: ' + sum)
@@ -60,3 +64,6 @@ while(count < Math.pow(size, 2)) {
   }
   count++;
 }
+
+// Тут было все проще
+// Функцию drawFraction() которую я давал изначально, просто нужно было вызвать во вложенном цикле (для оси x и y), для рисования можно было использовать css
